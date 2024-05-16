@@ -1,0 +1,54 @@
+/* ----------------------------------title bar------------------------------------------ */
+.title-bar{
+background: url(./images/book.jpg);
+width: 100%;
+height: 80px;
+}
+.title-bar h2{
+    color: orangered;
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 500px;
+}
+input{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+}
+.champs-texte{
+    width:400px ;
+    height:100px;
+}
+
+/* ------------------------------------------------Toutes les filières------------------------------------------- */
+.photo-hoverr {
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 415px;
+    height: 260px;
+    margin-top: 50px;
+}
+.titre{
+    /* /* width: 250px;
+    height: 50px;
+    background-color: #175419; */
+    margin-top: -260px;
+    margin-left: 420px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #175419;
+    border-bottom: 20px solid #175419;
+    border-left: 280px solid #175419;
+    border-right: 50px solid transparent;
+}
+.titre h4{
+    color: white;
+    margin-left: -200px;
+    font-family: rem;
+   margin-top: -15px;
+   margin-right: 19px;
+
+}
