@@ -1,52 +1,30 @@
-// -------------------------------actualités-----------------------------------------------------------
-document.addEventListener('DOMContentLoaded', () => {
-  // Your code here
 
-const scrollContainer = document.querySelector('.scroll-container');
-const scrollButtonLeft = document.querySelector('.scroll-button.left');
-const scrollButtonRight = document.querySelector('.scroll-button.right');
+// -------------------------------Actualités-------------------------------------------------------------
 
-const scrollAmount = 300; // Adjust scroll amount as needed
-
-scrollButtonRight.addEventListener('click', () => {
-  scrollContainer.scrollBy({
-    left: scrollAmount,
-    behavior: 'smooth'
-  });
-});
-
-scrollButtonLeft.addEventListener('click', () => {
-  scrollContainer.scrollBy({
-    left: -scrollAmount,
-    behavior: 'smooth'
-  });
-});
+// -------------------------------Temoignages-----------------------------------------------------------
+var swiper = new Swiper(".slider-content", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  slidesPerGroup:3,
+  loop: true,
+  fade:'true',
+  grabCursor:'true',
+  loopFillGroupWithBlank:true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 // ------------------------------animation compteurs------------------------------------------------
-// document.addEventListener('DOMContentLoaded', function() {
-//   const counterElements = document.querySelectorAll('.counter-value');
-
-//   const observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//       if (entry.isIntersecting) {
-//         const counter = new CountUp(".valeurFinal", 0, entry.target.dataset.targetvalue, {
-//           delay: 2,
-//           time: 2000,
-//         });
-//         counter.start();
-//       }
-//     });
-//   });
-  
-//   console.log(counterElements)
-//   counterElements.forEach((element) => {
-//     if (element.dataset.targetvalue) {
-//       observer.observe(element);
-//     } else {
-//       console.warn(`Counter element ${element} missing data-targetValue attribute.`);
-//     }
-//   });
-// });
+$(document).ready(()=> {
+  $('.counter-number-value').counterUp({
+    time:1500
+  });
+});
 
 // ----------------------------------animation texte compteurs--------------------------------------------------
 

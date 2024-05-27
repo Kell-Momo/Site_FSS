@@ -8,12 +8,16 @@
     <link rel="icon" href="./images/logo-100.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/d57ff3ef02.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="/bootstrap/bootstrap-icons.min.css">
     <script src="/bootstrap/bootstrap.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <!-- <script defer src="countUp.min.js" type="module"></script> -->
+    <script defer src="swiper-bundle.min.js"></script>
     <script defer src="script.js"></script>
     <title></title>
 </head>
@@ -51,7 +55,7 @@
         </div>
         <div class="links">
             <a href="Accueil.html">Accueil</a>
-            <a href="Apropos.html">Apropos</a>
+            <a href="./education - Copy/about.html">Apropos</a>
             <a href="Formation.html">Formations</a>
             <a href="#">S'inscrire</a>
         </div>
@@ -140,27 +144,27 @@
     <div class="container">
         <center><h2>Nos Filières</h2></center>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 image hidden">
                 <img src="./images/medGen.jpg"><div class="photo-hover"><center> La médecine humaine offre une opportunité passionnante d'acquérir des connaissances approfondies sur le corps humain, de développer des compétences pratiques pour diagnostiquer et traiter les maladies, ainsi que de faire une différence positive dans la vie des personnes en offrant des soins de santé essentiels et en contribuant à améliorer la qualité de vie de la société dans son ensemble.</center></div>
                 <div class="title"><h4>Medecine humaine</h4></div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 image hidden">
                 <img src="./images/chirugie-dentaire.jpg"><div class="photo-hover"><center>La chirurgie dentaire est une filière captivante qui combine à la fois la science médicale et l'art de restaurer et de préserver la santé bucco-dentaire. En choisissant la chirurgie dentaire, vous avez l'opportunité de soulager la douleur, d'améliorer le sourire des patients, de restaurer leur confiance en eux et de jouer un rôle crucial dans leur bien-être global. C'est une profession gratifiante qui offre des défis stimulants, une interaction avec les patients et la possibilité de contribuer à leur santé à long terme.</center></div>
                 <div class="title"><h4>Chirugie Dentaire</h4></div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 image hidden">
                 <img src="./images/pharmacie.png"><div class="photo-hover"><center>La pharmacie allie la science et les soins de santé. En choisissant cette filière, vous acquérez une connaissance approfondie des médicaments et de leur interaction avec le corps humain. Vous jouerez un rôle essentiel en veillant à ce que les patients reçoivent les médicaments appropriés et en les conseillant sur leur utilisation sûre et efficace. La pharmacie offre des opportunités de recherche et d'innovation dans le domaine de la santé. C'est une profession gratifiante où vous pouvez réellement faire une différence dans la vie des gens et dans le système de soins de santé.</center></div>
                 <div class="title"><h4>Pharmacie</h4></div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 image hidden">
                 <img src="./images/soins-infirmier.jpg"><div class="photo-hover"><center>La filière des soins infirmiers offre la possibilité d'apporter des soins attentionnés et de haute qualité aux patients, en jouant un rôle essentiel dans leur rétablissement et leur bien-être. C'est une profession gratifiante qui permet de créer des liens étroits avec les patients, de les accompagner dans leur parcours de soins et de contribuer de manière significative à leur santé. Les soins infirmiers offrent également des opportunités d'apprentissage continu et de croissance professionnelle. C'est une voie qui permet de faire une réelle différence dans la vie des individus et de la communauté.</center></div>
                 <div class="title"><h4>Soins infirmier</h4></div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 image hidden">
                 <img src="./images/veterinaire.jpg"><div class="photo-hover"><center> voir la photo</center></div>
                 <div class="title"><h4>Medecine Veterinaire</h4></div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 image hidden">
                 <img src="./images/agro.jpg"><div class="photo-hover"> <center>voir la photo</center></div>
                 <div class="title"><h4>Agronomie</h4></div>
             </div>
@@ -190,14 +194,14 @@
         <div class="row">
             <div class="col-md-3">
               <div class="counter-item">
-                <div class="counter-icon">
+                <div class="counter-icon image hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
                         <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
                         <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
                       </svg>
                 </div>
                 <div class="counter-number">
-                  <span class="counter-value" data-targetValue="97"><span class="valeurFinal">0</span>%</span>
+                  <span class="counter-number-value">97</span></span>%</span>
                 </div>
                 <div class="counter-title">
                   <h3>Diplomés</h3>
@@ -207,14 +211,14 @@
 
             <div class="col-md-3">
                 <div class="counter-item">
-                  <div class="counter-icon">
+                  <div class="counter-icon image hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
                         <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5"/>
                         <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z"/>
                       </svg>
                   </div>
                   <div class="counter-number">
-                    <span class="counter-value" data-targetValue="30"><span class="valeurFinal">0</span>+</span>
+                    <span class="counter-number-value" >30</span><span>+</span>
                   </div>
                   <div class="counter-title">
                     <h3>Enseignants certifié</h3>
@@ -224,14 +228,14 @@
 
               <div class="col-md-3">
                 <div class="counter-item">
-                  <div class="counter-icon">
+                  <div class="counter-icon image hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
                         <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
                         <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
                       </svg>
                   </div>
                   <div class="counter-number">
-                    <span class="counter-value" data-targetValue="2"><span class="valeurFinal">0</span></span>
+                    <span class="counter-number-value" >2</span>
                   </div>
                   <div class="counter-title">
                     <h3>Campus d'etudiants</h3>
@@ -241,13 +245,13 @@
 
               <div class="col-md-3">
                 <div class="counter-item">
-                  <div class="counter-icon">
+                  <div class="counter-icon image hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
                         <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
                       </svg>
                   </div>
                   <div class="counter-number">
-                    <span class="counter-value"  data-targetValue="1000"><span class="valeurFinal">0</span>+</span>
+                    <span class="counter-number-value" >1000</span><span>+</span>
                   </div>
                   <div class="counter-title">
                     <h3>Etudiants</h3>
@@ -258,23 +262,34 @@
     </div>
 </section>
 <!-----------------------------------Actualités------------------------------------- -->
-<section class="featured-categories-actualités">
-  <div class="section-actualites">
+
+<section class="hero">
+  <div class="actualites hidden">
   <h4>Actualités</h4>
-  <div class="actualites">
-    <div class="image-container">
-      <div class="scroll-container">
-        <img src="./images/soins-infirmier.jpg">
-        <img src="./images/chirugie-dentaire.jpg">
-        <img src="./images/soins-infirmier.jpg">
-        <img src="./images/chirugie-dentaire.jpg">
-      </div>
-      <button class="scroll-button left">&lt;</button>
-      <button class="scroll-button right">&gt;</button>
-    </div>
+  <p>Decouvrez une galerie des activités de la faculté des sciences de la sante de l'université des Montagnes</p>
   </div>
-</div>
 </section>
+  <!-- <i class="fa-solid fa-arrow-down arrow"></i> -->
+<section class="section-actualites">
+  <div class="contain">
+    <div class="slider-wrapper">
+      <div class="image-list">
+        <div class="center"></div>
+        <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="image-item">
+        <img src="https://swiperjs.com/demos/images/nature-2.jpg" class="image-item">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" class="image-item">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" class="image-item">
+        <img src="https://swiperjs.com/demos/images/nature-5.jpg" class="image-item">
+        <img src="https://swiperjs.com/demos/images/nature-6.jpg" class="image-item">
+        <img src="https://swiperjs.com/demos/images/nature-7.jpg" class="image-item">
+        <img src="https://swiperjs.com/demos/images/nature-8.jpg" class="image-item">
+        <img src="https://swiperjs.com/demos/images/nature-9.jpg" class="image-item">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
 <!----------------------------------mot du doyen------------------------------------>
 <section>
   <div class="espace-doyen">
@@ -299,48 +314,165 @@
     </div>
 </div>
 </section>
+<!------------------------------------Temoinages------------------------------------------ -->
+<div class="slide-tittle hidden">
+<h4>Temoignages</h4>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima qui quidem est, atque id expedita repellendus debitis perferendis vel? Cupiditate iure eos minus aliquid odit nulla neque iste, quibusdam quisquam?</p>
+</div>
+<section class="slide-body" >
+  <div class="slide-container swiper">
+    <div class="slider-content">
+      <div class="card-wrapper swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="./images/student1.jpeg" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Foutse Yuehgoh</h2>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In magni quia praesentium ullam? Impedit quo dolor illo quia voluptate tenetur suscipit unde error? Porro impedit voluptatem ducimus, nam molestias dolorum!</p>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="./images/student1.jpeg" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Foutse Yuehgoh</h2>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In magni quia praesentium ullam? Impedit quo dolor illo quia voluptate tenetur suscipit unde error? Porro impedit voluptatem ducimus, nam molestias dolorum!</p>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="./images/student1.jpeg" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Foutse Yuehgoh</h2>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In magni quia praesentium ullam? Impedit quo dolor illo quia voluptate tenetur suscipit unde error? Porro impedit voluptatem ducimus, nam molestias dolorum!</p>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="./images/student1.jpeg" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Foutse Yuehgoh</h2>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In magni quia praesentium ullam? Impedit quo dolor illo quia voluptate tenetur suscipit unde error? Porro impedit voluptatem ducimus, nam molestias dolorum!</p>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="./images/student1.jpeg" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Foutse Yuehgoh</h2>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In magni quia praesentium ullam? Impedit quo dolor illo quia voluptate tenetur suscipit unde error? Porro impedit voluptatem ducimus, nam molestias dolorum!</p>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="./images/student1.jpeg" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Foutse Yuehgoh</h2>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In magni quia praesentium ullam? Impedit quo dolor illo quia voluptate tenetur suscipit unde error? Porro impedit voluptatem ducimus, nam molestias dolorum!</p>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="./images/student1.jpeg" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Foutse Yuehgoh</h2>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In magni quia praesentium ullam? Impedit quo dolor illo quia voluptate tenetur suscipit unde error? Porro impedit voluptatem ducimus, nam molestias dolorum!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
 <!------------------------------Footer---------------------------------->
 
 <section class="footer">
+  <div class="row">
+    <div class="col">
+      <img src="./images/logo-100.jpg" class="logo">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur inventore dolore, quo sunt sequi ratione voluptas accusamus, deserunt voluptates autem officia voluptatum eligendi, ullam corrupti incidunt quibusdam ut dignissimos dolorum.</p>
+    </div>
+    <div class="col">
+      <h3>Liens importants</h3>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Formations</a></li>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">Sinscrire</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Contactez-nous</h3>
+      <div class="contact" style="margin-left: -20px;">
+      <div class="icon1">
+        <i class="fa-solid fa-phone fa-xl" style="color: #fff; margin-left: -35px;"></i>
+        <p style="color: white; margin-top: -20px; margin-left: 15px;">+237678872629</p>
+    </div>
+    <div class="icon2">
+        <i class="fa-solid fa-location-dot fa-xl" style="color: #fff;  margin-left: -285px;"></i>
+        <p style="color: white; margin-left: -240px; margin-top: -20px;">Banekane,Bangangté Cameroun</p>
+    </div>
+    <div class="icon3">
+        <i class="fa-regular fa-envelope fa-xl" style="color: #fff; margin-left: -185px;"></i>
+        <p style="color: white; margin-left: -135px; margin-top: -20px;">Udm@Aed.com</p>
+    </div>
+  </div>
+    </div>
+    <div class="col">
+      <h3>Sites</h3>
+      <ul>
+        <li><a href="">ISST</a></li>
+        <li><a href="">ISSS</a></li>
+        <li><a href="">IAE</a></li>
+      </ul>
+    </div>
+  </div>
   <div class="container text">
     <hr>
-    <div class="row footer-content">
-      <div class="col-md-4">
-        <h1>Liens importants</h1>
-            <a href="#">Accueil</a><br>
-            <a href="#">Apropos</a><br>
-            <a href="#">Formations</a><br>
-            <a href="#">S'inscrire</a>
-      </div>
-      <div class="col-md-4">
-          <h1>Contactez-nous</h1>
-          <div class="icon1">
-            <i class="fa-solid fa-phone fa-xl" style="color: #175419; margin-left: -35px;"></i>
-            <p style="color: black; margin-top: -20px; margin-left: 15px;">+237678872629</p>
-        </div>
-        <div class="icon2">
-            <i class="fa-solid fa-location-dot fa-xl" style="color: #175419;  margin-left: -285px;"></i>
-            <p style="color: black; margin-left: -240px; margin-top: -20px;">Banekane,Bangangté Cameroun</p>
-        </div>
-        <div class="icon3">
-            <i class="fa-regular fa-envelope fa-xl" style="color: #175419; margin-left: -185px;"></i>
-            <p style="color: black; margin-left: -135px; margin-top: -20px;">Udm@Aed.com</p>
-        </div>
-        </div>
-          <div class="col-md-4">
-              <h1>Partenaires</h1>
-              <p>Privacy Policy</p>
-              <p>Terms of Use</p>
-              <p>Return Policy</p>
-              <p>Discount Coupons</p>
-            </div>
-    </div>
-   <!------------------------------ Header-GreenBar---------------------------- -->
-      <section>
-          <div class="last-bar">
-            <center><p class="copyright" style="margin-left: 0; color: white; margin-top: 20px;">MK Cooperations.</p></center>
-          </div>
-      </section>
+   <center><p class="copyright" style="margin-left: 0; color: white; margin-top: 20px;">MK Cooperations.</p></center>
   </div>
 </section>
 </body>
